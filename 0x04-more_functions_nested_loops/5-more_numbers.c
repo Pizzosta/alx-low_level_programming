@@ -14,7 +14,7 @@ void more_numbers(void)
 		{
 			if (b >= 10)
 			{
-				_putchar((b / 10) + 48);
+				_putchar('1');
 			}
 			_putchar((b % 10) + 48);
 		}
