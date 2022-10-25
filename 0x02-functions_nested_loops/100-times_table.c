@@ -26,8 +26,8 @@ void print_times_table(int n)
 			if (op <= n)
 				_putchar(' ');
 			else
-				_putchar(((op / 100) % 10) + '0');
-				_putchar(((op / 10) % 10) + '0');
+				_putchar((op / 100) + '0');
+				_putchar((op / 10) + '0');
 				_putchar((op % 10) + '0');
 		}
 		_putchar('\n');
