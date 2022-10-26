@@ -4,12 +4,11 @@
 /**
  * _puts - prints a string followed by a newline
  * @str: input string
- * Return: always 0 succesful
+ * Return: no return
  */
 
 void _puts(char *str)
 {
 	puts(str);
 
-	return (0);
 }
