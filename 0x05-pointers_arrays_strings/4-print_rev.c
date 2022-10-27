@@ -1,4 +1,4 @@
-#include <string.h>
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -9,6 +9,10 @@
 
 void print_rev(char *s)
 {
-	strrev(s);
+	int leng, g;
+
+	leng = strlen(s);
+	for (g = leng - 1; g >= 0; g--)
+	_putchar(s(g));	
 	_putchar('\n');
 }
