@@ -8,7 +8,7 @@
 
 void puts2(char *str)
 {
-	int c;
+	int i;
 	int s;
 
 	for (i = 0; i < strlen(str); i += 2)
