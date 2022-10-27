@@ -9,6 +9,6 @@
 
 void print_rev(char *s)
 {
-	rev(s);
+	revstr(s);
 	_putchar('\n');
 }
