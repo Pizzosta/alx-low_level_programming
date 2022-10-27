@@ -2,22 +2,17 @@
 #include <string.h>
 
 /**
- * puts2 - function a function that prints every other character
- * of a string, starting with the first character
- *
+ * puts2 - a function that prints every other string
  * @str: string
  */
 
 void puts2(char *str)
 {
-	int c;
-	int end;
+	int i;
 
-	end = strlen(str) - 1;
-	for (c = 0, c <= end; c++)
+	for (i = 0; i < strlen(str); i += 2)
 	{
-		if (c % 2 == 0)
-			_putchar(str[c]);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
