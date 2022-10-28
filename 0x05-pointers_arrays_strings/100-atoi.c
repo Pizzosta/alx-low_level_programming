@@ -1,34 +1,31 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - check the code
+ * _atoi - a function that convert a string to an integer.
  *
  * Return: Always 0.
  */
 
-int main(void)
+int _atoi(char *s)
 {
-	int nb;
-
-	nb = atoi("xd-xds5");
-	/*n =  1000000000;*/
-	printf("%d\n", nb);
-	nb = atoi("-402");
-	printf("%d\n", nb);
-	nb = atoi("          ------++++++-----+++++--98");
-	printf("%d\n", nb);
-	nb = atoi("214748364");
-	printf("%d\n", nb);
-	nb = atoi("0");
-	printf("%d\n", nb);
-	nb = atoi("Suite 402");
-	printf("%d\n", nb);
-	nb = atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
-	printf("%d\n", nb);
-	nb = atoi("---++++ -++ Sui - te -   402 #cisfun :)");
-	printf("%d\n", nb);
+	s = _atoi("xd-xds5");
+	/*s =  1000000000;*/
+	printf("%d\n", s);
+	s = _atoi("-402");
+	printf("%d\n", s);
+	s = _atoi("          ------++++++-----+++++--98");
+	printf("%d\n", s);
+	s = _atoi("214748364");
+	printf("%d\n", s);
+	s = _atoi("0");
+	printf("%d\n", s);
+	s = _atoi("Suite 402");
+	printf("%d\n", s);
+	s = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
+	printf("%d\n", s);
+	s = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
+	printf("%d\n", s);
 	return (0);
 
 }
