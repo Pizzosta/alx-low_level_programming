@@ -10,7 +10,8 @@ int main(void)
 {
 	int nb;
 
-	nb = _atoi("98");
+	nb = _atoi("xd-xds5");
+	/*n =  1000000000;*/
 	printf("%d\n", nb);
 	nb = _atoi("-402");
 	printf("%d\n", nb);
