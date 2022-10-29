@@ -3,14 +3,13 @@
 
 /**
  * *_strcmp - a function that concatenates two strings.
- * @dest: first string
- * @src: second string
+ * @s1: first string
+ * @s2: second string
  * Return: dest
  */
 
-char *_strcmp(char *dest, char *src)
+char *_strcmp(char *s1, char *s2)
 {
-	strcmp(dest, src);
+	strcmp(s1, s2);
 
-	return (dest);
 }
