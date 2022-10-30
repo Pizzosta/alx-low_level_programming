@@ -10,8 +10,7 @@
 
 char *_strcmp(char *s1, char *s2)
 {
-	int flag = 0;
-	int i = 0;
+	static int flag = 0, i = 0;
 
 	if (strlen(s1) != strlen(s2))
 	{
