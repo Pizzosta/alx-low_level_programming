@@ -10,23 +10,14 @@
 
 char *_strcmp(char *s1, char *s2)
 {
-	static int flag = 0, i = 0;
+	int i = 0, op = 0;
 
-	if (strlen(s1) != strlen(s2))
+	while (op == 0)
 	{
-		return (0);
+		if ((*(s1 + i) == '\0') && (*(s2 + i) == '\0'))
+			break;
+		op = *(s1 + i) - *(s2 + i);
+		i++;
 	}
-	else if (i < strlen(s1))
-	{
-		if (s1[i] == s2[i])
-		{
-			flag++;
-			i++;
-		}
-		_strcmp(s1, s2);
-	}
-	if (flag == 0)
-		return (0);
-	else
-		return (1);
+	return(op);
 }
