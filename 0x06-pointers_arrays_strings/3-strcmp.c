@@ -13,14 +13,18 @@ char *_strcmp(char *s1, char *s2)
 	int flag = 0;
 	int i = 0;
 
-	while (*s1 != '\0' && *s2 != '\0')
+	if (strlen(s1) != strlen(s2))
 	{
-		if (s1[i] != s2[i])
+		return (0);
+	}
+	else if (i < strlen(s1))
+	{
+		if (s1[i] == s2[i])
 		{
-			flag = i;
-			break;
+			flag++;
+			i++;
 		}
-		i++;
+		_strcmp(s1, s2);
 	}
 	if (flag == 0)
 		return (0);
