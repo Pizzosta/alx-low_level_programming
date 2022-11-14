@@ -21,15 +21,15 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s1[i] != '\0'; i++)
 
 	for (j = 0; s2[j] != '\0'; j++)
-	
+
 	strout = malloc(sizeof(char) * (i + j + 1));
 	if (strout == NULL)
 	{
 		return (NULL);
 	}
-	for (k = 0; k < i; k++)
+	for (k = 0; s1[k] != '\0'; k++)
 		strout[k] = s1[k];
-	for (j = 0; j < i; j++)
+	for (j = 0; s2[j] != '\0'; j++)
 	{
 		strout[k] = s2[j];
 		k++;
