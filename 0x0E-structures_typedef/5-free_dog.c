@@ -5,13 +5,12 @@
  * free_dog - free dog
  * @d: dog to be freed
  */
- 
 void free_dog(dog_t *d)
 {
 	if (d)
 	{
 		free(d->name);
-		free(d->age);
 		free(d->owner);
+		free(d);
 	}
 }
