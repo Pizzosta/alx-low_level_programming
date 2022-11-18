@@ -7,7 +7,7 @@
  * Return: Always 0 success
  */
 
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num1, num2;
 	char *operator;
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*operator == '/' || *operator == "%") && num2 == 0)
+	if ((*operator == '/' || operator == "%") && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
