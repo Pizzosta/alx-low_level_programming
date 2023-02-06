@@ -26,7 +26,7 @@ hash_node_t *add_n_hash(hash_node_t **head, const char *key, const char *value)
 	}
 
 	tmp = malloc(sizeof(hash_node_t));
-	
+
 	if (tmp == NULL)
 		return (NULL);
 
