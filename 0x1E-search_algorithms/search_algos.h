@@ -49,4 +49,4 @@ typedef struct skiplist_s
 
 skiplist_t *linear_skip(skiplist_t *list, int value);
 
-#endif _SORTING_ALGOS_H_
+#endif /** _SORTING_ALGOS_H_ **/
